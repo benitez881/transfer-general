@@ -66,6 +66,7 @@ body {
   border: 0;
   border-radius: 32px;
   cursor: pointer;
+  text-decoration: none;
 }
 .header__text-info {
   font-family: "Roboto";
@@ -514,8 +515,6 @@ body {
   padding-bottom: 100px;
   overflow: hidden;
   background-image: url(./img/general/general-back3.png);
-}
-.general__container {
   position: relative;
 }
 .general__back {
@@ -649,6 +648,9 @@ body {
   line-height: 135.49%;
   color: #e9e9ff;
 }
+.general__cases-text-mobile {
+  display: none;
+}
 .general__link {
   height: 64px;
   padding-top: 66px;
@@ -683,6 +685,13 @@ body {
     flex-direction: column;
   }
   .general__cases-text {
+    max-width: none;
+    display: none;
+  }
+  .general__cases-text-mobile-active {
+    display: block;
+  }
+  .general__cases-btns {
     max-width: none;
   }
 }

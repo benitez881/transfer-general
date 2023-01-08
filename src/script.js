@@ -1,5 +1,6 @@
 const caseBtns = document.querySelectorAll(".general__cases-btn");
 const text = document.querySelector("#general__cases-text");
+const mobileAnswers = document.querySelectorAll(".general__cases-text-mobile");
 
 const playBtn = document.querySelector("#info__screen-filler-btn");
 const player = document.querySelector("#my-video");
@@ -25,6 +26,14 @@ caseBtns.forEach((btn) => {
       btn.classList.remove("general__cases-btn-active");
     });
     target.classList.add("general__cases-btn-active");
+
+    mobileAnswers.forEach((answers) => {
+      answers.classList.remove("general__cases-text-mobile-active");
+    });
+
+    document
+      .querySelector(`#${target.id}-answer`)
+      .classList.add("general__cases-text-mobile-active");
 
     switch (target.id) {
       case "case-1":

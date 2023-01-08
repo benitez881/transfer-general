@@ -75,6 +75,8 @@ body {
       border-radius: 32px;
 
       cursor: pointer;
+
+      text-decoration: none;
     }
 
     &-info {
@@ -643,10 +645,7 @@ body {
   padding-bottom: 100px;
   overflow: hidden;
   background-image: url(./img/general/general-back3.png);
-
-  &__container {
-    position: relative;
-  }
+  position: relative;
 
   &__back {
     position: absolute;
@@ -808,6 +807,10 @@ body {
       line-height: 135.49%;
 
       color: #e9e9ff;
+
+      &-mobile {
+        display: none;
+      }
     }
   }
   &__link {
@@ -856,6 +859,16 @@ body {
       flex-direction: column;
 
       &-text {
+        max-width: none;
+        display: none;
+        &-mobile {
+          &-active {
+            display: block;
+          }
+        }
+      }
+
+      &-btns {
         max-width: none;
       }
     }
