@@ -7,13 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/style.css">
 
-  <title>Document</title>
+  <title>Transfer General</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 
 <body>
@@ -40,39 +45,89 @@
   <div class="line"></div>
 
   <div class="info">
-    <div class="title info__title">
-      Transfer your data securely
-    </div>
+    <img src="./src/img/cloud.svg" alt="" class="info__cloud info__cloud-1">
+    <img src="./src/img/cloud.svg" alt="" class="info__cloud info__cloud-2">
+    <img src="./src/img/cloud.svg" alt="" class="info__cloud info__cloud-3">
+    <img src="./src/img/cloud.svg" alt="" class="info__cloud info__cloud-4">
+    <img src="./src/img/cloud.svg" alt="" class="info__cloud info__cloud-5">
+    <img src="./src/img/cloud.svg" alt="" class="info__cloud info__cloud-6">
+    <div class="info__container">
 
-    <div class="info__points">
-      <div class="info__point">
-        Transfer General (TG) uses cryptography to empower data owners to securely distribute or archive
-        highly-sensitive data no matter where the data resides - in a data center or the cloud.
+      <div class="title info__title">
+        Transfer your data securely
       </div>
-      <div class="info__point">
-        There is no need to set up virtual private networks thereby lowering overall data transfer/distribution/archival
-        costs.
-      </div>
-      <div class="info__point">
-        TG provides all the benefits of using Google Cloud storage while mitigating risks associated with it.
-      </div>
-      <div class="info__point">
-        TG is an ideal solution for organizations that deal with in-scope data.
-      </div>
-    </div>
 
-    <div class="info__screen">
-      <div class="info__screen-camera">
+      <div class="info__points">
+        <div class="info__point-container">
+          <div class="info__point-circle info__point-circle-light info__point-circle-first"></div>
+          <div class="info__point">
+            <div class="info__point-background">
+              Transfer General (TG) uses cryptography to empower data owners to securely distribute or archive
+              highly-sensitive data no matter where the data resides - in a data center or the cloud.
+            </div>
+          </div>
+          <img src="./src/img/info/1.png" alt="" class="info__point-img-first">
+        </div>
 
+        <div class="info__point-container">
+          <div class="info__point-circle"></div>
+          <div class="info__point">
+            <div class="info__point-background">
+              There is no need to set up virtual private networks thereby lowering overall data
+              transfer/distribution/archival
+              costs.
+            </div>
+          </div>
+          <img src="./src/img/info/2.png" alt="" class="info__point-img-first">
+        </div>
+        <div class="info__point-container">
+          <div class="info__point-circle info__point-circle-light"></div>
+          <div class="info__point">
+            <div class="info__point-background">
+              TG provides all the benefits of using Google Cloud storage while mitigating risks associated with it.
+            </div>
+          </div>
+          <img src="./src/img/info/3.png" alt="" class="info__point-img-first">
+        </div>
+        <div class="info__point-container">
+          <div class="info__point-circle-last"></div>
+          <div class="info__point">
+            <div class="info__point-background">
+              TG is an ideal solution for organizations that deal with in-scope data.
+            </div>
+          </div>
+          <img src="./src/img/info/4.png" alt="" class="info__point-img-first">
+        </div>
       </div>
-      <div class="info__screen-filler">
-        <button class="info__screen-filler-btn">
-          See how it works
-          <span class="info__screen-filler-btn-img">
-            <img src="./src/img/play/elipse.png" alt="" class="info__screen-filler-btn-elipse">
-            <img src="./src/img/play/play.png" alt="" class="info__screen-filler-btn-play">
-          </span>
-        </button>
+
+      <div class="info__screen">
+        <div class="info__screen-camera">
+        </div>
+        <div class="info__screen-filler">
+          <video style="display: none; border-radius: 26px;" id="my-video" class="video-js" controls preload="auto"
+            width="100%" height="100%" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+            <source src="MY_VIDEO.mp4" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+          </video>
+
+          <div class="info__screen-filler-btn" id="info__screen-filler-btn">
+            <div class="info__screen-filler-btn-background">
+              <div class="info__screen-filler-btn-text">
+                See how it works
+              </div>
+              <div class="info__screen-filler-btn-play">
+                <div class="info__screen-filler-btn-play-background">
+                  <img src="./src/img/play/play.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -109,6 +164,10 @@
   </div>
 
   <div class="deployment">
+    <img src="./src/img/cloud.svg" alt="" class="deployment__cloud deployment__cloud-1">
+    <img src="./src/img/cloud.svg" alt="" class="deployment__cloud deployment__cloud-2">
+    <img src="./src/img/cloud.svg" alt="" class="deployment__cloud deployment__cloud-3">
+
     <div class="title deployment__title">
       Typical Transfer Genera Deployment
     </div>
@@ -117,108 +176,126 @@
 
   <div class="general">
     <div class="general__container">
-      <div class="title general__title">
-        Why Transfer General?
-      </div>
 
-      <div class="general__cards">
-        <div class="general__card">
-          <div class="general__card-img-border">
-            <div class="general__card-img">
-              <img src="./src/img/general/1.png" alt="">
+      <img src="./src/img/general/general-back.png" alt="" class="general__back general__back-1">
+      <img src="./src/img/general/general-back2.png" alt="" class="general__back general__back-2">
+      <img src="./src/img/general/general-back3.png" alt="" class="general__back general__back-3">
+      <div class="general__container">
+        <div class="title general__title">
+          Why Transfer General?
+        </div>
+
+        <div class="general__cards">
+          <div class="general__card">
+            <div class="general__card-img-border">
+              <div class="general__card-img">
+                <img src="./src/img/general/1.png" alt="">
+              </div>
+            </div>
+
+            <div class="general__card-text">
+              Transfer General empowers data owners to safely share the most sensitive data with a partner without
+              setting
+              up a VPN.
             </div>
           </div>
 
-          <div class="general__card-text">
-            Transfer General empowers data owners to safely share the most sensitive data with a partner without setting
-            up a VPN.
-          </div>
-        </div>
+          <div class="general__card">
+            <div class="general__card-img-border">
+              <div class="general__card-img">
+                <img src="./src/img/general/2.png" alt="">
+              </div>
+            </div>
 
-        <div class="general__card">
-          <div class="general__card-img-border">
-            <div class="general__card-img">
-              <img src="./src/img/general/2.png" alt="">
+            <div class="general__card-text">
+              Transfer General lowers corporate liability exposure by encrypting data before it leaves the secure
+              confines
+              of your network.
             </div>
           </div>
 
-          <div class="general__card-text">
-            Transfer General lowers corporate liability exposure by encrypting data before it leaves the secure confines
-            of your network.
-          </div>
-        </div>
+          <div class="general__card">
+            <div class="general__card-img-border">
+              <div class="general__card-img">
+                <img src="./src/img/general/3.png" alt="">
+              </div>
+            </div>
 
-        <div class="general__card">
-          <div class="general__card-img-border">
-            <div class="general__card-img">
-              <img src="./src/img/general/3.png" alt="">
+            <div class="general__card-text">
+              Transfer General lowers data sharing/archiving costs by enabling organizations to use Google Cloud
+              storage.
+              Only the encrypted data is stored in the cloud.
             </div>
           </div>
 
-          <div class="general__card-text">
-            Transfer General lowers data sharing/archiving costs by enabling organizations to use Google Cloud storage.
-            Only the encrypted data is stored in the cloud.
-          </div>
-        </div>
+          <div class="general__card">
+            <div class="general__card-img-border">
+              <div class="general__card-img">
+                <img src="./src/img/general/4.png" alt="">
+              </div>
+            </div>
 
-        <div class="general__card">
-          <div class="general__card-img-border">
-            <div class="general__card-img">
-              <img src="./src/img/general/4.png" alt="">
+            <div class="general__card-text">
+              Transfer General helps to overcome corporate bandwidth limitations when sharing large data sets stored in
+              a
+              data center server.
             </div>
           </div>
+        </div>
 
-          <div class="general__card-text">
-            Transfer General helps to overcome corporate bandwidth limitations when sharing large data sets stored in a
-            data center server.
+        <div class="title general__title">
+          Use cases
+        </div>
+
+        <div class="general__cases">
+          <div class="general__cases-btns">
+            <button class="general__cases-btn general__cases-btn-active" id="case-1">
+              Research data distribution
+            </button>
+            <button class="general__cases-btn" id="case-2">
+              Archival of on-premises sensitive data
+            </button>
+            <button class="general__cases-btn" id="case-3">
+              Archival of sensitive data stored in a cloud server
+            </button>
+            <button class="general__cases-btn" id="case-4">
+              Migrating regulated data from one cloud provider to another
+            </button>
+          </div>
+          <div class="general__cases-text" id="general__cases-text">
+            When you attempt to share highly sensitive data stored on-premises in your data center, you face multiple
+            challenges - should you directly transfer the data to mitigate potential data security risk, or do you make
+            use of cloud storage so you have to upload the data only once and distribute it to multiple partners?
+            A direct transfer may not be possible depending on the size of the data and the corporate bandwidth at your
+            disposal.
+            On the other hand, using a cloud bucket may be very attractive, but you just don’t want to deal with an
+            added
+            security risk.
+            That is where Transfer General comes in.
+            Transfer General will encrypt your data on-premises, allow you to maintain complete control over the data
+            encryption key, upload your encrypted data to a Google Storage bucket, and act as your distribution center.
+            Since only the encrypted data is uploaded into the bucket, you will eliminate any potential data security
+            issue stemming from a storage bucket misconfiguration or a rogue storage administrator.
+            You’ll be able to push the data stored in the bucket to multiple destinations where the data will be
+            decrypted
+            for your intended audience.
+            You’ll be able to deny access to the data at any time with help of built-in cryptographic techniques.
           </div>
         </div>
-      </div>
-
-      <div class="title general__title">
-        Use cases
-      </div>
-
-      <div class="general__cases">
-        <div class="general__cases-btns">
-          <button class="general__cases-btn general__cases-btn-active">
-            Research data distribution
-          </button>
-          <button class="general__cases-btn">
-            Archival of on-premises sensitive data
-          </button>
-          <button class="general__cases-btn">
-            Archival of sensitive data stored in a cloud server
-          </button>
-          <button class="general__cases-btn">
-            Migrating regulated data from one cloud provider to another
-          </button>
+        <div class="general__link">
+          <a href="">Taste it!</a>
         </div>
-        <div class="general__cases-text">
-          When you attempt to share highly sensitive data stored on-premises in your data center, you face multiple
-          challenges - should you directly transfer the data to mitigate potential data security risk, or do you make
-          use of cloud storage so you have to upload the data only once and distribute it to multiple partners?
-          A direct transfer may not be possible depending on the size of the data and the corporate bandwidth at your
-          disposal.
-          On the other hand, using a cloud bucket may be very attractive, but you just don’t want to deal with an added
-          security risk.
-          That is where Transfer General comes in.
-          Transfer General will encrypt your data on-premises, allow you to maintain complete control over the data
-          encryption key, upload your encrypted data to a Google Storage bucket, and act as your distribution center.
-          Since only the encrypted data is uploaded into the bucket, you will eliminate any potential data security
-          issue stemming from a storage bucket misconfiguration or a rogue storage administrator.
-          You’ll be able to push the data stored in the bucket to multiple destinations where the data will be decrypted
-          for your intended audience.
-          You’ll be able to deny access to the data at any time with help of built-in cryptographic techniques.
-        </div>
-      </div>
-      <div class="general__link">
-        <a href="">Taste it!</a>
       </div>
     </div>
+
   </div>
 
   <div class="help">
+    <img src="./src/img/cloud.svg" alt="" class="help__cloud help__cloud-1">
+    <img src="./src/img/cloud.svg" alt="" class="help__cloud help__cloud-2">
+    <img src="./src/img/cloud.svg" alt="" class="help__cloud help__cloud-3">
+    <img src="./src/img/cloud.svg" alt="" class="help__cloud help__cloud-4">
+
     <div class="help__container">
       <div class="title help__title">
         How can Transfer General help me with data sovereignty?
@@ -227,52 +304,85 @@
       <div class="help__text">
         Transfer General is designed to help customers meet data sovereignty requirements. Here is how we can help:
       </div>
+
+      <div class="help__data">
+        <div class="help__data-row">
+          <div class="help__data-text">
+            Does Google control/manage the data encryption keys?
+          </div>
+          <div class="help__data-mark help__data-negative">
+            N
+          </div>
+        </div>
+        <div class="help__data-row">
+          <div class="help__data-text">
+            Can Google change the data decryption policy?
+          </div>
+          <div class="help__data-mark help__data-negative">
+            N
+          </div>
+        </div>
+        <div class="help__data-row">
+          <div class="help__data-text">
+            Can the Google admin see the data in clear-text?
+          </div>
+          <div class="help__data-mark help__data-negative">
+            N
+          </div>
+        </div>
+        <div class="help__data-row">
+          <div class="help__data-text">
+            Can the Google admin change the data access policy?
+          </div>
+          <div class="help__data-mark help__data-negative">
+            N
+          </div>
+        </div>
+        <div class="help__data-row">
+          <div class="help__data-text">
+            Can the Google admin compromise the workload?
+          </div>
+          <div class="help__data-mark help__data-negative">
+            N
+          </div>
+        </div>
+        <div class="help__data-row">
+          <div class="help__data-text">
+            Can the customer set the data decryption policy?
+          </div>
+          <div class="help__data-mark help__data-positive">
+            Y
+          </div>
+        </div>
+        <div class="help__data-row">
+          <div class="help__data-text">
+            Can the workload survive for an extended period without getting updates from the provider?
+          </div>
+          <div class="help__data-mark help__data-positive">
+            Y
+          </div>
+        </div>
+        <div class="help__data-row">
+          <div class="help__data-text">
+            Can deployment be restricted to a specific region?
+          </div>
+          <div class="help__data-mark help__data-positive">
+            Y
+          </div>
+        </div>
+        <div class="help__data-row">
+          <div class="help__data-text">
+            Can the workload be deployed on different cloud platforms?
+          </div>
+          <div class="help__data-mark help__data-positive">
+            Y
+          </div>
+        </div>
+
+      </div>
     </div>
-
-    <table class="help__table">
-      <tr class="help__table-negative">
-        <td>
-          Does Google control/manage the data encryption keys?
-        </td>
-        <td>
-          N
-        </td>
-      </tr>
-      <tr class="help__table-negative">
-        <td>
-          Can Google change the data decryption policy?
-        </td>
-        <td>
-          N
-        </td>
-      </tr>
-      <tr class="help__table-negative">
-        <td>
-          Can the Google admin see the data in clear-text?
-        </td>
-        <td>
-          N
-        </td>
-      </tr>
-      <tr class="help__table-negative">
-        <td>
-          Can the Google admin change the data access policy?
-        </td>
-        <td>
-          N
-        </td>
-      </tr>
-      <tr class="help__table-negative">
-        <td>
-          Can the Google admin compromise the workload?
-        </td>
-        <td>
-          N
-        </td>
-      </tr>
-    </table>
   </div>
-
+  <script src="./src/script.js"></script>
 </body>
 
 </html>
