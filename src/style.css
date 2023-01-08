@@ -542,7 +542,7 @@ body {
 .general__cards {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 18px;
   margin-bottom: 58px;
 }
 .general__card {
@@ -550,7 +550,7 @@ body {
   border: 2px solid #e9e9ff;
   border-radius: 40px;
   min-height: 320px;
-  max-width: 244px;
+  max-width: 264px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -672,7 +672,7 @@ body {
 @media (max-width: 1023px) {
   .general__cards {
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 552px;
     margin-left: auto;
     margin-right: auto;
   }
