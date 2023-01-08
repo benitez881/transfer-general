@@ -551,7 +551,7 @@ body {
   top: 10px;
 }
 .general__container {
-  max-width: 1090px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -563,7 +563,7 @@ body {
 .general__cards {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 16px;
   margin-bottom: 58px;
 }
 .general__card {
@@ -571,7 +571,7 @@ body {
   border: 2px solid #e9e9ff;
   border-radius: 40px;
   min-height: 320px;
-  max-width: 244px;
+  max-width: 274px;
   padding: 30px;
   display: flex;
   flex-direction: column;
