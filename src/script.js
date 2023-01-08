@@ -85,3 +85,6 @@ challengeQuests.forEach((elem) => {
       ?.classList.add("challenges__point-checkmarked-open");
   });
 });
+
+const screen = document.querySelector(".info__screen-filler");
+screen.style.height = screen.offsetWidth / 1.78 + "px";

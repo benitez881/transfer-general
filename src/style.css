@@ -77,6 +77,7 @@ body {
   line-height: 160.49%;
   margin-top: 21px;
   margin-bottom: 32px;
+  text-align: center;
   color: #585864;
   max-width: 342px;
   width: 100%;
@@ -93,7 +94,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 20px;
+    gap: 30px;
     max-width: 717px;
   }
   .header__img {
@@ -102,8 +103,8 @@ body {
 }
 @media (max-width: 767px) {
   .header {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .header__img img {
     max-width: 100%;
@@ -249,6 +250,7 @@ body {
   margin-top: 100px;
   max-width: 1008px;
   width: 100%;
+  height: calc(width * 1.78);
   padding-bottom: 24px;
 }
 .info__screen-camera {
@@ -268,7 +270,6 @@ body {
   margin: auto;
   margin-top: 24px;
   width: calc(100% - 48px);
-  height: calc(100% - 48px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,8 +278,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 255px;
-  margin-top: 255px;
   cursor: pointer;
   width: 238px;
   height: 66px;
@@ -335,6 +334,12 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .info__title {
+    margin-bottom: 40px;
+  }
+  .info__cloud-1 {
+    display: none;
+  }
   .info__point-circle {
     display: none;
   }
@@ -348,6 +353,9 @@ body {
     gap: 50px;
     justify-content: start;
     margin: 0 auto;
+  }
+  .info__container {
+    padding-top: 0;
   }
 }
 @media (max-width: 544px) {
@@ -375,7 +383,7 @@ body {
 .challenges__points {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 40px;
 }
 .challenges__point {
   max-width: 619px;
@@ -475,8 +483,14 @@ body {
 }
 
 @media (max-width: 767px) {
+  .challenges {
+    padding-top: 40px;
+  }
   .challenges__points {
     padding-left: 40px;
+  }
+  .challenges__point-number {
+    left: -45px;
   }
   .challenges__point-number-open::after {
     content: none;
@@ -531,6 +545,15 @@ body {
 @media (max-width: 1023px) {
   .deployment__cloud-1 {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .deployment {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .deployment__title {
+    margin-bottom: 40px;
   }
 }
 .general {
@@ -624,7 +647,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 24px;
   text-align: center;
   color: #fdfdff;
   max-width: 358px;
@@ -711,6 +734,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .general {
+    padding-top: 40px;
+  }
   .general__cases {
     flex-direction: column;
   }

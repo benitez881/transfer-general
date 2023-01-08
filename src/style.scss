@@ -90,6 +90,8 @@ body {
       margin-top: 21px;
       margin-bottom: 32px;
 
+      text-align: center;
+
       color: #585864;
 
       max-width: 342px;
@@ -112,7 +114,7 @@ body {
       justify-content: center;
       align-items: start;
 
-      gap: 20px;
+      gap: 30px;
       max-width: 717px;
     }
 
@@ -124,8 +126,8 @@ body {
 
 @media (max-width: 767px) {
   .header {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
     &__img {
       & img {
@@ -298,7 +300,7 @@ body {
     margin-top: 100px;
     max-width: 1008px;
     width: 100%;
-    // height: 576px;
+    height: calc(#{width} * 1.78);
     padding-bottom: 24px;
 
     &-camera {
@@ -323,7 +325,7 @@ body {
       margin-top: 24px;
 
       width: calc(100% - 48px);
-      height: calc(100% - 48px);
+      // height: 565px;
 
       display: flex;
       justify-content: center;
@@ -334,8 +336,8 @@ body {
         justify-content: center;
         align-items: center;
 
-        margin-bottom: 255px;
-        margin-top: 255px;
+        // margin-bottom: 255px;
+        // margin-top: 255px;
 
         cursor: pointer;
 
@@ -409,6 +411,15 @@ body {
 
 @media (max-width: 767px) {
   .info {
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__cloud {
+      &-1 {
+        display: none;
+      }
+    }
+
     &__point {
       &-circle {
         display: none;
@@ -424,6 +435,9 @@ body {
         justify-content: start;
         margin: 0 auto;
       }
+    }
+    &__container {
+      padding-top: 0;
     }
   }
 }
@@ -467,7 +481,7 @@ body {
   &__points {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 40px;
   }
 
   &__point {
@@ -596,11 +610,13 @@ body {
 
 @media (max-width: 767px) {
   .challenges {
+    padding-top: 40px;
     &__points {
       padding-left: 40px;
     }
     &__point {
       &-number {
+        left: -45px;
         &-open::after {
           content: none;
         }
@@ -665,6 +681,16 @@ body {
       &-1 {
         display: none;
       }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .deployment {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__title {
+      margin-bottom: 40px;
     }
   }
 }
@@ -778,7 +804,7 @@ body {
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
-      line-height: 30px;
+      line-height: 24px;
       text-align: center;
 
       color: #fdfdff;
@@ -891,6 +917,7 @@ body {
 
 @media (max-width: 767px) {
   .general {
+    padding-top: 40px;
     &__cases {
       flex-direction: column;
 
