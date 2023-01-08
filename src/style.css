@@ -34,6 +34,7 @@ body {
   padding: 0 15px;
   padding-top: 155px;
   padding-bottom: 155px;
+  gap: 15px;
   display: flex;
   justify-content: space-between;
 }
