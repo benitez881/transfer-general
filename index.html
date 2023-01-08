@@ -24,21 +24,25 @@
 <body>
 
   <div class="header">
-    <div class="header__text">
-      <div class="header__text-img">
-        <img src="./src/img/header-image-text.png" alt="">
+    <img src="./src/img/blur.png" alt="" class="header__blur header__blur-1">
+    <img src="./src/img/blur.png" alt="" class="header__blur header__blur-2">
+    <div class="header__container">
+      <div class="header__text">
+        <div class="header__text-img">
+          <img src="./src/img/header-image-text.svg" alt="">
+        </div>
+        <div class="header__text-info">
+          Securely Transfer, Share, and Archive
+          Your Most Sensitive Data
+          with Help of Google Cloud
+        </div>
+        <button class="header__text-btn">
+          Transfer your data
+        </button>
       </div>
-      <div class="header__text-info">
-        Securely Transfer, Share, and Archive<br />
-        Your Most Sensitive Data<br />
-        with Help of Google Cloud<br />
+      <div class="header__img">
+        <img src="./src/img/header-image.png" alt="">
       </div>
-      <button class="header__text-btn">
-        Transfer your data
-      </button>
-    </div>
-    <div class="header__img">
-      <img src="./src/img/header-image.png" alt="">
     </div>
   </div>
 
@@ -66,7 +70,7 @@
               highly-sensitive data no matter where the data resides - in a data center or the cloud.
             </div>
           </div>
-          <img src="./src/img/info/1.png" alt="" class="info__point-img-first">
+          <img src="./src/img/info/1.svg" alt="" class="info__point-img-first">
         </div>
 
         <div class="info__point-container">
@@ -78,7 +82,7 @@
               costs.
             </div>
           </div>
-          <img src="./src/img/info/2.png" alt="" class="info__point-img-first">
+          <img src="./src/img/info/2.svg" alt="" class="info__point-img-first">
         </div>
         <div class="info__point-container">
           <div class="info__point-circle info__point-circle-light"></div>
@@ -87,7 +91,7 @@
               TG provides all the benefits of using Google Cloud storage while mitigating risks associated with it.
             </div>
           </div>
-          <img src="./src/img/info/3.png" alt="" class="info__point-img-first">
+          <img src="./src/img/info/3.svg" alt="" class="info__point-img-first">
         </div>
         <div class="info__point-container">
           <div class="info__point-circle-last"></div>
@@ -96,7 +100,7 @@
               TG is an ideal solution for organizations that deal with in-scope data.
             </div>
           </div>
-          <img src="./src/img/info/4.png" alt="" class="info__point-img-first">
+          <img src="./src/img/info/4.svg" alt="" class="info__point-img-first">
         </div>
       </div>
 
@@ -138,11 +142,11 @@
         Challenges
       </div>
       <div class="challenges__points">
-        <div class="challenges__point">
-          <div class="challenges__point-number challenges__point-number-first">#1</div>
+        <div class="challenges__point" id="challenges__point-1">
+          <div class="challenges__point-number challenges__point-number-open">#1</div>
           How to share highly-sensitive data securely with partners?
         </div>
-        <div class="challenges__point challenges__point-checkmarked">
+        <div class="challenges__point-checkmarked challenges__point-checkmarked-open" id="challenges__point-1-answer">
           <div class="challenges__point-checkmark">
             <div class="challenges__point-checkmark-inner"><img src="./src/img/check.png" alt=""></div>
           </div>
@@ -151,14 +155,31 @@
           Google Storage bucket acts as the distribution point. The data remains encrypted till it reaches its
           destination. No VPN is required.
         </div>
-        <div class="challenges__point">
+        <div class="challenges__point" id="challenges__point-2">
           <div class="challenges__point-number">#2</div>
           How to archive in-scope data in a cloud storage bucket?
         </div>
-        <div class="challenges__point">
+        <div class="challenges__point-checkmarked" id="challenges__point-2-answer">
+          <div class="challenges__point-checkmark">
+            <div class="challenges__point-checkmark-inner"><img src="./src/img/check.png" alt=""></div>
+          </div>
+          If you want to take advantage of cloud storage to lower your archival cost but are afraid to do so because of
+          potential security risks, then Transfer General can help. You will encrypt your data before it’s uploaded,
+          control your data encryption key, and automate transfers of your encrypted data into a Google storage bucket.
+        </div>
+        <div class="challenges__point" id="challenges__point-3">
           <div class="challenges__point-number">#3</div>
           How to transfer in-scope data across cloud platforms?
         </div>
+        <div class="challenges__point-checkmarked" id="challenges__point-3-answer">
+          <div class="challenges__point-checkmark">
+            <div class="challenges__point-checkmark-inner"><img src="./src/img/check.png" alt=""></div>
+          </div>
+          Many times contractual obligations and/or compliance requirements necessitate that only encrypted data be
+          transferred from one cloud platform to another. This is not easy unless you are managing your own data
+          encryption keys. Transfer General can.
+        </div>
+
       </div>
     </div>
   </div>

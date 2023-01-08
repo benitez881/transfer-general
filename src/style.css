@@ -24,7 +24,11 @@ body {
   }
 }
 .header {
-  max-width: 1060px;
+  position: relative;
+  overflow: hidden;
+}
+.header__container {
+  max-width: 1090px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -32,6 +36,18 @@ body {
   padding-bottom: 155px;
   display: flex;
   justify-content: space-between;
+}
+.header__blur {
+  position: absolute;
+  z-index: -1;
+}
+.header__blur-1 {
+  left: -600px;
+  top: -600px;
+}
+.header__blur-2 {
+  right: -600px;
+  bottom: -600px;
 }
 .header__text {
   display: flex;
@@ -60,10 +76,12 @@ body {
   margin-top: 21px;
   margin-bottom: 32px;
   color: #585864;
+  max-width: 342px;
+  width: 100%;
 }
 
 @media (max-width: 1023px) {
-  .header {
+  .header__container {
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -81,6 +99,9 @@ body {
   }
   .header__img img {
     max-width: 100%;
+  }
+  .header__blur-2 {
+    display: none;
   }
 }
 .line {
@@ -354,6 +375,7 @@ body {
   line-height: 23px;
   color: #e9e9ff;
   position: relative;
+  cursor: pointer;
 }
 .challenges__point-number {
   display: flex;
@@ -367,7 +389,7 @@ body {
   position: absolute;
   left: -25px;
 }
-.challenges__point-number-first:after {
+.challenges__point-number-open:after {
   content: "";
   background: url(./img/challenges-line.png);
   position: relative;
@@ -377,10 +399,30 @@ body {
   height: 22px;
 }
 .challenges__point-checkmarked {
+  width: 100%;
+  min-height: 72px;
+  padding: 24px;
+  padding-left: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #202373;
+  border-radius: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #e9e9ff;
   border: 2px solid #fdfdff;
   position: relative;
   left: 5px;
   max-width: 662px;
+  cursor: unset;
+  display: none;
+}
+.challenges__point-checkmarked-open {
+  display: block;
 }
 .challenges__point-checkmark {
   display: flex;
@@ -393,6 +435,10 @@ body {
   background: #202373;
   position: absolute;
   left: -45px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .challenges__point-checkmark-inner {
   width: 61px;
@@ -412,7 +458,7 @@ body {
   .challenges__points {
     padding-left: 40px;
   }
-  .challenges__point-number-first::after {
+  .challenges__point-number-open::after {
     content: none;
   }
   .challenges__point-checkmarked {
@@ -743,6 +789,7 @@ body {
   color: #585864;
   display: flex;
   align-items: center;
+  background: #ffffff;
 }
 .help__data-mark {
   font-family: "Roboto";
@@ -759,10 +806,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #ffffff;
 }
 .help__data-negative {
   color: #d81919;
 }
 .help__data-positive {
   color: #5ec94c;
+}
+
+@media (max-width: 991px) {
+  .help__cloud-1, .help__cloud-2 {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
