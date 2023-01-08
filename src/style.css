@@ -530,7 +530,7 @@ body {
   top: 10px;
 }
 .general__container {
-  max-width: 1040px;
+  max-width: 1090px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -550,7 +550,7 @@ body {
   border: 2px solid #e9e9ff;
   border-radius: 40px;
   min-height: 320px;
-  max-width: 284px;
+  max-width: 244px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -677,9 +677,13 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    gap: 24px;
   }
   .general__cases {
     gap: 20px;
+  }
+  .general__card {
+    max-width: 284px;
   }
 }
 @media (max-width: 767px) {

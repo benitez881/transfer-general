@@ -661,7 +661,7 @@ body {
   }
 
   &__container {
-    max-width: 1040px;
+    max-width: 1090px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -686,7 +686,7 @@ body {
 
     border-radius: 40px;
     min-height: 320px;
-    max-width: 284px;
+    max-width: 244px;
     padding: 20px;
 
     display: flex;
@@ -848,9 +848,13 @@ body {
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
+      gap: 24px;
     }
     &__cases {
       gap: 20px;
+    }
+    &__card {
+      max-width: 284px;
     }
   }
 }
