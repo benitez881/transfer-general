@@ -686,13 +686,13 @@ body {
 
     border-radius: 40px;
     min-height: 320px;
-    max-width: 264px;
+    max-width: 284px;
     padding: 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
 
     &-img {
       width: 84px;
@@ -737,6 +737,7 @@ body {
       display: flex;
       flex-direction: column;
       gap: 45px;
+      align-items: center;
 
       max-width: 358px;
       width: 100%;
@@ -780,12 +781,13 @@ body {
         margin-top: auto;
         margin-bottom: auto;
         transition: 0.4s all;
+        transform: rotate(90deg);
       }
 
       &-active {
         background: linear-gradient(90.02deg, #50aff6 1.2%, #50aff6 82.16%);
         &::after {
-          transform: rotate(180deg);
+          transform: rotate(270deg);
         }
       }
     }
@@ -843,7 +845,7 @@ body {
   .general {
     &__cards {
       flex-wrap: wrap;
-      max-width: 552px;
+      max-width: 600px;
       margin-left: auto;
       margin-right: auto;
     }
